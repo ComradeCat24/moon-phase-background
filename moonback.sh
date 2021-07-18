@@ -37,7 +37,7 @@ fi
 echo $wdir
 
 #first half of gsettings command forces background to reload, by assigning an empty picture and immediately replacing it with the updated back.tif file.
-gsettings set  org.cinnamon.desktop.background picture-uri "" && gsettings set  org.cinnamon.desktop.background picture-uri "file://$wdir/back.tif"
+gsettings set  org.gnome.desktop.background picture-uri "" && gsettings set  org.gnome.desktop.background picture-uri "file://$wdir/back.tif"
 
 #remove downloaded moon phile as not too use up storage.
 rm $im
